@@ -1,5 +1,5 @@
 const express = require('express');
-const hubsRouter = require('.');
+const postsRouter = require('./hubs/postsRouter');
 const server = express();
 
 
@@ -8,7 +8,7 @@ server.use(express.json());
 server.get('/', (req, res) => {
   res.send(`
     <h2>Lambda Hubs API</h>
-    <p>Welcome to the Lambda Hubs API</p>
+    <p>Welcome to the Fire</p>
   `);
 });
 
